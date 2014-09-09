@@ -78,6 +78,7 @@ h1 {
 p{
     margin-left: 15px;
     margin-right: 15px;
+    font-family: 'Lato', sans-serif;
 }
 
 .page2 img {
@@ -91,7 +92,8 @@ p{
 }
 
 .titleP2 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    font-family: 'Permanent Marker', serif;
 }
 
 .fb {
@@ -109,4 +111,21 @@ p{
 
 .page2 p {
     text-align: justify;
+}
+
+.moreImages {
+    clear: both;
+}
+
+.data {
+    width: 33.333333%;
+}
+
+.tableContainer {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.data img {
+    width: 32%;
 }
