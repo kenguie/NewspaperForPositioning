@@ -1,0 +1,629 @@
+Last login: Tue Sep  9 10:00:11 on ttys000
+kenricks-mbp:~ kenguie$ pwd
+/Users/kenguie
+kenricks-mbp:~ kenguie$ ls
+Applications	Downloads	GoogleGit	NYCDA		p90x
+Box Sync	Dropbox		Library		Pictures	temp
+Desktop		GitHub		Movies		Public
+Documents	Google Drive	Music		helloworld.rb
+kenricks-mbp:~ kenguie$ ls -l
+total 8
+drwx------    3 kenguie  staff   102 Jun 15 20:15 Applications
+drwx------   64 kenguie  staff  2176 Jun 16 06:08 Box Sync
+drwx------+   7 kenguie  staff   238 Sep  8 17:12 Desktop
+drwx------+   7 kenguie  staff   238 Jul  9 11:48 Documents
+drwx------+   9 kenguie  staff   306 Sep  9 08:40 Downloads
+drwx------@ 109 kenguie  staff  3706 Sep  7 15:40 Dropbox
+drwxr-xr-x   18 kenguie  staff   612 Sep  8 11:08 GitHub
+drwx------@  64 kenguie  staff  2176 Aug 21 10:48 Google Drive
+drwxr-xr-x    5 kenguie  staff   170 Jul 18 07:10 GoogleGit
+drwx------@  51 kenguie  staff  1734 Sep  3 07:48 Library
+drwx------+   3 kenguie  staff   102 Jun 15 12:07 Movies
+drwx------+   4 kenguie  staff   136 Jun 15 23:21 Music
+drwxr-xr-x    4 kenguie  staff   136 Sep  9 08:42 NYCDA
+drwx------+   5 kenguie  staff   170 Jul  6 16:32 Pictures
+drwxr-xr-x+   5 kenguie  staff   170 Jun 15 12:07 Public
+-rw-r--r--    1 kenguie  staff    21 Jun 16 00:12 helloworld.rb
+drwxr-xr-x    5 kenguie  staff   170 Jul  3 15:01 p90x
+drwxr-xr-x    4 kenguie  staff   136 Sep  3 07:15 temp
+kenricks-mbp:~ kenguie$ ls -a
+.			.profile		Google Drive
+..			.rvm			GoogleGit
+.CFUserTextEncoding	.ssh			Library
+.DS_Store		.zlogin			Movies
+.Trash			.zshrc			Music
+.bash_history		Applications		NYCDA
+.bash_profile		Box Sync		Pictures
+.bashrc			Desktop			Public
+.config			Documents		helloworld.rb
+.dropbox		Downloads		p90x
+.gem			Dropbox			temp
+.gitconfig		GitHub
+kenricks-mbp:~ kenguie$ pwd
+/Users/kenguie
+kenricks-mbp:~ kenguie$ cd ~/Desktop
+kenricks-mbp:Desktop kenguie$ pwd
+/Users/kenguie/Desktop
+kenricks-mbp:Desktop kenguie$ ls
+Komodo Edit 8	Terminal.app	sample_app
+kenricks-mbp:Desktop kenguie$ pwd
+/Users/kenguie/Desktop
+kenricks-mbp:Desktop kenguie$ touch www
+kenricks-mbp:Desktop kenguie$ ls
+Komodo Edit 8	Terminal.app	sample_app	www
+kenricks-mbp:Desktop kenguie$ cd www
+-bash: cd: www: Not a directory
+kenricks-mbp:Desktop kenguie$ del www
+-bash: del: command not found
+kenricks-mbp:Desktop kenguie$ rm www
+kenricks-mbp:Desktop kenguie$ ls
+Komodo Edit 8	Terminal.app	sample_app
+kenricks-mbp:Desktop kenguie$ mkdir www
+kenricks-mbp:Desktop kenguie$ ls
+Komodo Edit 8	Terminal.app	sample_app	www
+kenricks-mbp:Desktop kenguie$ cd www
+kenricks-mbp:www kenguie$ touch index.html
+kenricks-mbp:www kenguie$ ls
+index.html
+kenricks-mbp:www kenguie$ mkdir styles
+kenricks-mbp:www kenguie$ mkdir js
+kenricks-mbp:www kenguie$ mkdir images
+kenricks-mbp:www kenguie$ ls
+images		index.html	js		styles
+kenricks-mbp:www kenguie$ vim index.html
+kenricks-mbp:www kenguie$ vim index.html
+kenricks-mbp:www kenguie$ pico index.html
+kenricks-mbp:www kenguie$ pwd
+/Users/kenguie/Desktop/www
+kenricks-mbp:www kenguie$ cd ..
+kenricks-mbp:Desktop kenguie$ pwd
+/Users/kenguie/Desktop
+kenricks-mbp:Desktop kenguie$ mkdir project-one
+kenricks-mbp:Desktop kenguie$ ls
+Komodo Edit 8	Terminal.app	project-one	sample_app	www
+kenricks-mbp:Desktop kenguie$ pwd
+/Users/kenguie/Desktop
+kenricks-mbp:Desktop kenguie$ cd project-one/
+kenricks-mbp:project-one kenguie$ l
+-bash: l: command not found
+kenricks-mbp:project-one kenguie$ ls
+kenricks-mbp:project-one kenguie$ touch index.html
+kenricks-mbp:project-one kenguie$ pwd
+/Users/kenguie/Desktop/project-one
+kenricks-mbp:project-one kenguie$ ls
+index.html
+kenricks-mbp:project-one kenguie$ del index.html 
+-bash: del: command not found
+kenricks-mbp:project-one kenguie$ rm index.html 
+kenricks-mbp:project-one kenguie$ ls
+kenricks-mbp:project-one kenguie$ touch index.html
+kenricks-mbp:project-one kenguie$ ls
+index.html
+kenricks-mbp:project-one kenguie$ touch .hidden.txt
+kenricks-mbp:project-one kenguie$ ls
+index.html
+kenricks-mbp:project-one kenguie$ ls -l
+total 0
+-rw-r--r--  1 kenguie  staff  0 Sep  9 10:42 index.html
+kenricks-mbp:project-one kenguie$ ls -a
+.		..		.hidden.txt	index.html
+kenricks-mbp:project-one kenguie$ mv .hidden.txt hidden.txt
+kenricks-mbp:project-one kenguie$ ls
+hidden.txt	index.html
+kenricks-mbp:project-one kenguie$ pwd
+/Users/kenguie/Desktop/project-one
+kenricks-mbp:project-one kenguie$ cd ..
+kenricks-mbp:Desktop kenguie$ pwd
+/Users/kenguie/Desktop
+kenricks-mbp:Desktop kenguie$ mkdir second
+kenricks-mbp:Desktop kenguie$ ls
+Komodo Edit 8	project-one	second
+Terminal.app	sample_app	www
+kenricks-mbp:Desktop kenguie$ cd second
+kenricks-mbp:second kenguie$ ls
+kenricks-mbp:second kenguie$ touch one.txt
+kenricks-mbp:second kenguie$ touch two.txt
+kenricks-mbp:second kenguie$ ls
+one.txt	two.txt
+kenricks-mbp:second kenguie$ rm two.txt 
+kenricks-mbp:second kenguie$ ls
+one.txt
+kenricks-mbp:second kenguie$ rename one.txt three.txt
+-bash: rename: command not found
+kenricks-mbp:second kenguie$ mv one.txt three.txt
+kenricks-mbp:second kenguie$ ls
+three.txt
+kenricks-mbp:second kenguie$ touch hidden.txt
+kenricks-mbp:second kenguie$ ls
+hidden.txt	three.txt
+kenricks-mbp:second kenguie$ touch this has spaces.txt
+kenricks-mbp:second kenguie$ ls
+has		hidden.txt	spaces.txt	this		three.txt
+kenricks-mbp:second kenguie$ ls -l
+total 0
+-rw-r--r--  1 kenguie  staff  0 Sep  9 10:53 has
+-rw-r--r--  1 kenguie  staff  0 Sep  9 10:52 hidden.txt
+-rw-r--r--  1 kenguie  staff  0 Sep  9 10:53 spaces.txt
+-rw-r--r--  1 kenguie  staff  0 Sep  9 10:53 this
+-rw-r--r--  1 kenguie  staff  0 Sep  9 10:51 three.txt
+kenricks-mbp:second kenguie$ rm has
+kenricks-mbp:second kenguie$ rm this
+kenricks-mbp:second kenguie$ rm spaces.txt
+kenricks-mbp:second kenguie$ ls
+hidden.txt	three.txt
+kenricks-mbp:second kenguie$ touch this/has/spaces.txt
+touch: this/has/spaces.txt: No such file or directory
+kenricks-mbp:second kenguie$ touch this\has\spaces.txt
+kenricks-mbp:second kenguie$ ls
+hidden.txt		thishasspaces.txt	three.txt
+kenricks-mbp:second kenguie$ touch my\ space.txt
+kenricks-mbp:second kenguie$ ls
+hidden.txt		thishasspaces.txt
+my space.txt		three.txt
+kenricks-mbp:second kenguie$ pwd
+/Users/kenguie/Desktop/second
+kenricks-mbp:second kenguie$ mv my\ space.txt /Users/kenguie/Desktop/
+kenricks-mbp:second kenguie$ ls
+hidden.txt		thishasspaces.txt	three.txt
+kenricks-mbp:second kenguie$ cd ..
+kenricks-mbp:Desktop kenguie$ ls
+Komodo Edit 8	my space.txt	sample_app	www
+Terminal.app	project-one	second
+kenricks-mbp:Desktop kenguie$ ls
+Komodo Edit 8	my space.txt	sample_app	www
+Terminal.app	project-one	second
+kenricks-mbp:Desktop kenguie$ cd ..
+kenricks-mbp:~ kenguie$ ls
+Applications	Downloads	GoogleGit	NYCDA		p90x
+Box Sync	Dropbox		Library		Pictures	temp
+Desktop		GitHub		Movies		Public
+Documents	Google Drive	Music		helloworld.rb
+kenricks-mbp:~ kenguie$ cd Documents/
+kenricks-mbp:Documents kenguie$ ls
+Parallels	podcast videos
+kenricks-mbp:Documents kenguie$ mkdir www
+kenricks-mbp:Documents kenguie$ ls
+Parallels	podcast videos	www
+kenricks-mbp:Documents kenguie$ cd www
+kenricks-mbp:www kenguie$ mkdir NYCDANEWS
+kenricks-mbp:www kenguie$ cd NYCDANEWS/
+kenricks-mbp:NYCDANEWS kenguie$ ls
+kenricks-mbp:NYCDANEWS kenguie$ touch index.html
+kenricks-mbp:NYCDANEWS kenguie$ touch css
+kenricks-mbp:NYCDANEWS kenguie$ rm css
+kenricks-mbp:NYCDANEWS kenguie$ ls
+index.html
+kenricks-mbp:NYCDANEWS kenguie$ mkdir css
+kenricks-mbp:NYCDANEWS kenguie$ mkdir images
+kenricks-mbp:NYCDANEWS kenguie$ ls
+css		images		index.html
+kenricks-mbp:NYCDANEWS kenguie$ cd css
+kenricks-mbp:css kenguie$ touch mystyle.css
+kenricks-mbp:css kenguie$ ls
+mystyle.css
+kenricks-mbp:css kenguie$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+kenricks-mbp:css kenguie$ cd/
+-bash: cd/: No such file or directory
+kenricks-mbp:css kenguie$ cd\
+> ls
+-bash: cdls: command not found
+kenricks-mbp:css kenguie$ pwd
+/Users/kenguie/Documents/www/NYCDANEWS/css
+kenricks-mbp:css kenguie$ cd ..
+kenricks-mbp:NYCDANEWS kenguie$ pwd
+/Users/kenguie/Documents/www/NYCDANEWS
+kenricks-mbp:NYCDANEWS kenguie$ git init
+Initialized empty Git repository in /Users/kenguie/Documents/www/NYCDANEWS/.git/
+kenricks-mbp:NYCDANEWS kenguie$ git add -A
+kenricks-mbp:NYCDANEWS kenguie$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   css/mystyle.css
+	new file:   index.html
+
+kenricks-mbp:NYCDANEWS kenguie$ git commit -m "initial commit"
+[master (root-commit) ce66f4c] initial commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 css/mystyle.css
+ create mode 100644 index.html
+kenricks-mbp:NYCDANEWS kenguie$ git status
+On branch master
+nothing to commit, working directory clean
+kenricks-mbp:NYCDANEWS kenguie$ git status
+On branch master
+nothing to commit, working directory clean
+kenricks-mbp:NYCDANEWS kenguie$ ls
+css		images		index.html
+kenricks-mbp:NYCDANEWS kenguie$ ls -a
+.		.git		images
+..		css		index.html
+kenricks-mbp:NYCDANEWS kenguie$ cd\
+> ls
+-bash: cdls: command not found
+kenricks-mbp:NYCDANEWS kenguie$ pwd
+/Users/kenguie/Documents/www/NYCDANEWS
+kenricks-mbp:NYCDANEWS kenguie$ cd/
+-bash: cd/: No such file or directory
+kenricks-mbp:NYCDANEWS kenguie$ cd ..
+kenricks-mbp:www kenguie$ pwd
+/Users/kenguie/Documents/www
+kenricks-mbp:www kenguie$ cd../../..
+-bash: cd../../..: No such file or directory
+kenricks-mbp:www kenguie$ cd ../../..
+kenricks-mbp:Users kenguie$ ls
+Guest		Shared		kenguie		meiho-guie
+kenricks-mbp:Users kenguie$ pwd
+/Users
+kenricks-mbp:Users kenguie$ cd kenguie
+kenricks-mbp:~ kenguie$ ls
+Applications	Downloads	GoogleGit	NYCDA		p90x
+Box Sync	Dropbox		Library		Pictures	temp
+Desktop		GitHub		Movies		Public
+Documents	Google Drive	Music		helloworld.rb
+kenricks-mbp:~ kenguie$ cd GitHub
+kenricks-mbp:GitHub kenguie$ ls
+BusinessPage2a		fizzbuzz		jquery1
+Spoon-Knife		foodHunter		nycda
+businessPage		hot-cold-redesign	quiz
+businessPage2		hot-or-cold		resume
+fizzRefactor		jfighter		shoppingList
+kenricks-mbp:GitHub kenguie$ mkdir anything
+kenricks-mbp:GitHub kenguie$ ls
+BusinessPage2a		fizzbuzz		nycda
+Spoon-Knife		foodHunter		quiz
+anything		hot-cold-redesign	resume
+businessPage		hot-or-cold		shoppingList
+businessPage2		jfighter
+fizzRefactor		jquery1
+kenricks-mbp:GitHub kenguie$ ls -a
+.			businessPage2		jquery1
+..			fizzRefactor		nycda
+.DS_Store		fizzbuzz		quiz
+BusinessPage2a		foodHunter		resume
+Spoon-Knife		hot-cold-redesign	shoppingList
+anything		hot-or-cold
+businessPage		jfighter
+kenricks-mbp:GitHub kenguie$ cd anything
+kenricks-mbp:anything kenguie$ ls
+kenricks-mbp:anything kenguie$ pwd
+/Users/kenguie/GitHub/anything
+kenricks-mbp:anything kenguie$ ls
+kenricks-mbp:anything kenguie$ touch index.html
+kenricks-mbp:anything kenguie$ mkdir styles
+kenricks-mbp:anything kenguie$ cd styles
+kenricks-mbp:styles kenguie$ touch style.css
+kenricks-mbp:styles kenguie$ ls
+style.css
+kenricks-mbp:styles kenguie$ cd ..
+kenricks-mbp:anything kenguie$ pwd
+/Users/kenguie/GitHub/anything
+kenricks-mbp:anything kenguie$ git init
+Initialized empty Git repository in /Users/kenguie/GitHub/anything/.git/
+kenricks-mbp:anything kenguie$ git add .
+kenricks-mbp:anything kenguie$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   index.html
+	new file:   styles/style.css
+
+kenricks-mbp:anything kenguie$ git commit -m "inital commit"
+[master (root-commit) 5205c54] inital commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 styles/style.css
+kenricks-mbp:anything kenguie$ git status
+On branch master
+nothing to commit, working directory clean
+kenricks-mbp:anything kenguie$ 
+kenricks-mbp:anything kenguie$ 
+kenricks-mbp:anything kenguie$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   styles/style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kenricks-mbp:anything kenguie$ git add .
+kenricks-mbp:anything kenguie$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   index.html
+	modified:   styles/style.css
+
+kenricks-mbp:anything kenguie$ git commit -m "setting up fields"
+[master a83f1dc] setting up fields
+ 2 files changed, 45 insertions(+)
+kenricks-mbp:anything kenguie$ git status
+On branch master
+nothing to commit, working directory clean
+kenricks-mbp:anything kenguie$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   styles/style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kenricks-mbp:anything kenguie$ git add .
+kenricks-mbp:anything kenguie$ git commit -m "simple first section"
+[master fd220a1] simple first section
+ 2 files changed, 7 insertions(+)
+kenricks-mbp:anything kenguie$ git status
+On branch master
+nothing to commit, working directory clean
+kenricks-mbp:anything kenguie$ git log
+commit fd220a1b21a0823cc7d6312de35c32f9046593a7
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:23:44 2014 -0400
+
+    simple first section
+
+commit a83f1dce1216a0d982b88c05ed537c6f51588fa3
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:14:33 2014 -0400
+
+    setting up fields
+
+commit 5205c5469c01495d9aef13b2ed1a1cfc15eac14b
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:06:03 2014 -0400
+
+    inital commit
+kenricks-mbp:anything kenguie$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   styles/style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kenricks-mbp:anything kenguie$ git add .
+kenricks-mbp:anything kenguie$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   index.html
+	modified:   styles/style.css
+
+kenricks-mbp:anything kenguie$ git commit -m "part 2 animation done"
+[master 5ea8416] part 2 animation done
+ 2 files changed, 32 insertions(+), 3 deletions(-)
+kenricks-mbp:anything kenguie$ got log
+-bash: got: command not found
+kenricks-mbp:anything kenguie$ git log
+commit 5ea84161f831074886dc72dbc2774fa8dd02eb5f
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:36:24 2014 -0400
+
+    part 2 animation done
+
+commit fd220a1b21a0823cc7d6312de35c32f9046593a7
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:23:44 2014 -0400
+
+    simple first section
+
+commit a83f1dce1216a0d982b88c05ed537c6f51588fa3
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:14:33 2014 -0400
+
+    setting up fields
+
+commit 5205c5469c01495d9aef13b2ed1a1cfc15eac14b
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:06:03 2014 -0400
+
+    inital commit
+kenricks-mbp:anything kenguie$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   styles/style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kenricks-mbp:anything kenguie$ git add .
+kenricks-mbp:anything kenguie$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   index.html
+	modified:   styles/style.css
+
+kenricks-mbp:anything kenguie$ git commit -m "text area done"
+[master a6aafea] text area done
+ 2 files changed, 24 insertions(+), 1 deletion(-)
+kenricks-mbp:anything kenguie$ git log
+commit a6aafea89c9c721bfd6be980d1d5cf4cb459fe3b
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:41:02 2014 -0400
+
+    text area done
+
+commit 5ea84161f831074886dc72dbc2774fa8dd02eb5f
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:36:24 2014 -0400
+
+    part 2 animation done
+
+commit fd220a1b21a0823cc7d6312de35c32f9046593a7
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:23:44 2014 -0400
+
+    simple first section
+
+commit a83f1dce1216a0d982b88c05ed537c6f51588fa3
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:14:33 2014 -0400
+
+    setting up fields
+
+commit 5205c5469c01495d9aef13b2ed1a1cfc15eac14b
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:06:03 2014 -0400
+
+    inital commit
+kenricks-mbp:anything kenguie$ git add .
+kenricks-mbp:anything kenguie$ git commit -m "all done"
+[master a7d7f1a] all done
+ 3 files changed, 21 insertions(+), 5 deletions(-)
+ create mode 100644 images/wombat.jpg
+kenricks-mbp:anything kenguie$ git status
+On branch master
+nothing to commit, working directory clean
+kenricks-mbp:anything kenguie$ git log
+commit a7d7f1a434f1396dee2aafc0e42663062325b094
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:57:29 2014 -0400
+
+    all done
+
+commit a6aafea89c9c721bfd6be980d1d5cf4cb459fe3b
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:41:02 2014 -0400
+
+    text area done
+
+commit 5ea84161f831074886dc72dbc2774fa8dd02eb5f
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:36:24 2014 -0400
+
+    part 2 animation done
+
+commit fd220a1b21a0823cc7d6312de35c32f9046593a7
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:23:44 2014 -0400
+
+    simple first section
+
+commit a83f1dce1216a0d982b88c05ed537c6f51588fa3
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:14:33 2014 -0400
+
+    setting up fields
+
+commit 5205c5469c01495d9aef13b2ed1a1cfc15eac14b
+...skipping...
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:57:29 2014 -0400
+
+    all done
+
+commit a6aafea89c9c721bfd6be980d1d5cf4cb459fe3b
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:41:02 2014 -0400
+
+    text area done
+
+commit 5ea84161f831074886dc72dbc2774fa8dd02eb5f
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:36:24 2014 -0400
+
+    part 2 animation done
+
+commit fd220a1b21a0823cc7d6312de35c32f9046593a7
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:23:44 2014 -0400
+
+    simple first section
+
+commit a83f1dce1216a0d982b88c05ed537c6f51588fa3
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:14:33 2014 -0400
+
+    setting up fields
+
+commit 5205c5469c01495d9aef13b2ed1a1cfc15eac14b
+Author: nyhunter77 <nyhunter77@yahoo.com>
+kenricks-mbp:anything kenguie$ clear
+
+kenricks-mbp:anything kenguie$ git log
+commit a7d7f1a434f1396dee2aafc0e42663062325b094
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:57:29 2014 -0400
+
+    all done
+
+commit a6aafea89c9c721bfd6be980d1d5cf4cb459fe3b
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:41:02 2014 -0400
+
+    text area done
+
+commit 5ea84161f831074886dc72dbc2774fa8dd02eb5f
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:36:24 2014 -0400
+
+    part 2 animation done
+
+commit fd220a1b21a0823cc7d6312de35c32f9046593a7
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:23:44 2014 -0400
+
+    simple first section
+
+commit a83f1dce1216a0d982b88c05ed537c6f51588fa3
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:14:33 2014 -0400
+
+    setting up fields
+
+kenricks-mbp:anything kenguie$ git status
+On branch master
+nothing to commit, working directory clean
+kenricks-mbp:anything kenguie$ git log
+commit a7d7f1a434f1396dee2aafc0e42663062325b094
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:57:29 2014 -0400
+
+    all done
+
+commit a6aafea89c9c721bfd6be980d1d5cf4cb459fe3b
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:41:02 2014 -0400
+
+    text area done
+
+commit 5ea84161f831074886dc72dbc2774fa8dd02eb5f
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:36:24 2014 -0400
+
+    part 2 animation done
+
+commit fd220a1b21a0823cc7d6312de35c32f9046593a7
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:23:44 2014 -0400
+
+    simple first section
+
+commit a83f1dce1216a0d982b88c05ed537c6f51588fa3
+Author: nyhunter77 <nyhunter77@yahoo.com>
+Date:   Tue Sep 9 12:14:33 2014 -0400
+
+    setting up fields
+
+kenricks-mbp:anything kenguie$ 
